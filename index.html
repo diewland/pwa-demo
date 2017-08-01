@@ -1,11 +1,20 @@
 <html>
   <head>
-    <link href="app.css" rel="stylesheet" type="text/css" />
+    <link href="./css/app.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div id="status"></div>
-    <iframe src='app.js'></iframe>
-    <script src='app.js'></script>
+    <img src='./img/pwa-reliable.png'>
+    <div class='features'>
+      <h1>Features</h1>
+      <ul>
+        <li>Detect online/offline event</li>
+        <li>Open app when offline</li>
+        <!--<li>Add to homescreen</li>-->
+      </ul>
+    </div>
+    <script src='./sw-toolbox/companion.js' data-service-worker='my-sw.js'></script>
+    <script src='./js/app.js'></script>
   </body>
 </html>
