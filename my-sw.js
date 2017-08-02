@@ -1,6 +1,6 @@
 importScripts('./sw-toolbox/sw-toolbox.js');
 
-// 20170802 - add to homescreen
+// 20170802 - remove force a2hs script
 
 // cache during service-worker install step
 toolbox.precache([
