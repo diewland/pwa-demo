@@ -1,6 +1,6 @@
 importScripts('./sw-toolbox/sw-toolbox.js');
 
-// 20170802 - remove force a2hs script
+// 20170802 - change app theme
 
 // cache during service-worker install step
 toolbox.precache([
