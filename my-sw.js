@@ -7,9 +7,9 @@ toolbox.precache([
   'css/app.css',
   'img/pwa-reliable.png'
 ]);
-toolbox.router.get('css/*', toolbox.cacheFirst);
-toolbox.router.get('img/*', toolbox.cacheFirst);
+toolbox.router.get('css/*', toolbox.networkFirst);
+toolbox.router.get('img/*', toolbox.networkFirst);
 
 // cache during service-worker active step
-toolbox.router.get('', toolbox.cacheFirst);
-toolbox.router.get('js/*', toolbox.cacheFirst);
+toolbox.router.get('', toolbox.networkFirst);
+toolbox.router.get('js/*', toolbox.networkFirst);
