@@ -1,5 +1,7 @@
 importScripts('./sw-toolbox/sw-toolbox.js');
 
+// 20170802 - add to homescreen
+
 // cache during service-worker install step
 toolbox.precache([
   'css/app.css',

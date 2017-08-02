@@ -15,3 +15,19 @@ window.addEventListener('load', function() {
 
   updateOnlineStatus();
 });
+
+//
+// add to home screen
+//
+var savedPrompt;
+window.addEventListener('beforeinstallprompt', function(e){
+  e.preventDefault();
+  savedPrompt = e;
+  return false;
+});
+document.getElementById('a2hs').addEventListener('click', function(){
+  if(savedPrompt){
+    savedPrompt.prompt();
+    savedPrompt = null;
+  }
+});
