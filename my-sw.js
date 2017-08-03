@@ -12,4 +12,5 @@ toolbox.router.get('img/*', toolbox.networkFirst);
 
 // cache during service-worker active step
 toolbox.router.get('', toolbox.networkFirst); // index
+toolbox.router.get('index.html', toolbox.networkFirst);
 toolbox.router.get('js/*', toolbox.networkFirst);
