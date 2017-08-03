@@ -1,6 +1,6 @@
 importScripts('./sw-toolbox/sw-toolbox.js');
 
-// 20170802 - change app theme to #070
+// latest update: make code readable
 
 // cache during service-worker install step
 toolbox.precache([
